@@ -1,16 +1,14 @@
 # About Me
-🔭 I’m currently working on a telemedicine app
-
 👯 I’m looking to collaborate on any front-end related library
 
-🌱 I’m currently learning web3 and E2E testing (Cypress & Detox)
+🌱 I’m currently learning web3 and E2E testing (Cypress)
 
-💬 Ask me about anything React-wise
+💬 Ask me anything React-wise
 
-⚡ Fun fact: I love programming hardware
+⚡ Fun fact: I love hardware programming
 
 ## 🌐Socials
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-barreto-957239128/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-b-957239128/)
 
 # 💻Tech Stack
 
