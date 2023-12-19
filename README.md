@@ -1,5 +1,5 @@
 # About Me
-👯 I’m looking to collaborate on any front-end related library
+👯 I’m looking to collaborate on a front-end related library
 
 🌱 I’m currently learning web3 and E2E testing (Cypress)
 
