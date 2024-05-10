@@ -1,14 +1,9 @@
 # About Me
-👯 I’m looking to collaborate on a front-end related library
 
-🌱 I’m currently learning web3 and E2E testing (Cypress)
-
-💬 Ask me anything React-wise
-
-⚡ Fun fact: I love hardware programming
+⚡ Fun fact: I love hardware and networking work
 
 ## 🌐Socials
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-b-957239128/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-barreto-tech/)
 
 # 💻Tech Stack
 
