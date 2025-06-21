@@ -1,0 +1,108 @@
+/* Productive YouTube - Hide Recommendations Styles */
+
+/* Hide main homepage feed completely */
+ytd-browse[page-subtype="home"] #primary #contents {
+  display: none !important;
+}
+
+/* Hide rich grid renderer (main recommendation container) */
+ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+/* Hide individual video recommendation items */
+ytd-rich-item-renderer,
+ytd-video-renderer {
+  display: none !important;
+}
+
+/* Hide rich sections (category sections) */
+ytd-rich-section-renderer {
+  display: none !important;
+}
+
+/* Hide shorts shelf */
+ytd-rich-shelf-renderer[is-shorts],
+ytd-reel-shelf-renderer {
+  display: none !important;
+}
+
+/* Hide sidebar recommendations */
+#secondary #related,
+ytd-watch-next-secondary-results-renderer {
+  display: none !important;
+}
+
+/* Hide any remaining recommendation containers */
+div[page-subtype="home"] #contents,
+#primary #contents.ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+/* Ensure the productive message is visible */
+#productive-youtube-message {
+  display: block !important;
+  z-index: 9999 !important;
+}
+
+/* Hide homepage specific content */
+ytd-browse[page-subtype="home"] ytd-two-column-browse-results-renderer #primary {
+  display: none !important;
+}
+
+/* Alternative approach - hide the entire primary content area on homepage */
+body[aria-label="YouTube Home"] #primary,
+ytd-browse[page-subtype="home"] #primary {
+  display: none !important;
+}
+
+/* Show header, search, and navigation */
+#masthead,
+#guide,
+ytd-app-header-layout,
+ytd-masthead {
+  display: block !important;
+}
+
+/* Ensure subscriptions page still works */
+ytd-browse[page-subtype="subscriptions"] #primary {
+  display: block !important;
+}
+
+ytd-browse[page-subtype="subscriptions"] #contents {
+  display: block !important;
+}
+
+/* Ensure search results still work */
+ytd-search #primary {
+  display: block !important;
+}
+
+ytd-search #contents {
+  display: block !important;
+}
+
+/* Ensure watch page still works */
+ytd-watch-flexy #primary {
+  display: block !important;
+}
+
+/* Make sure the main page structure is preserved */
+#page-manager {
+  display: block !important;
+}
+
+#container {
+  display: block !important;
+}
+
+/* Hide any feed sections that might slip through */
+[page-subtype="home"] ytd-rich-grid-renderer,
+[page-subtype="home"] #contents.ytd-rich-grid-renderer,
+[page-subtype="home"] ytd-rich-item-renderer,
+[page-subtype="home"] ytd-video-renderer {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
