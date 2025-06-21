@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productive YouTube</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .header p {
+            margin: 5px 0 0 0;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+        
+        .settings {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 8px 0;
+        }
+        
+        .setting-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .setting-label {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .setting-description {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 2px;
+        }
+        
+        .toggle {
+            position: relative;
+            width: 44px;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .toggle.active {
+            background: #4CAF50;
+        }
+        
+        .toggle::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .toggle.active::after {
+            transform: translateX(20px);
+        }
+        
+        .status {
+            text-align: center;
+            margin-top: 16px;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .refresh-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .refresh-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Productive YouTube</h1>
+        <p>Stay focused, avoid distractions</p>
+    </div>
+    
+    <div class="settings">
+        <div class="setting-item">
+            <div>
+                <div class="setting-label">Hide Recommendations</div>
+                <div class="setting-description">Homepage video recommendations</div>
+            </div>
+            <div class="toggle" id="hideRecommendations"></div>
+        </div>
+        
+        <div class="setting-item">
+            <div>
+                <div class="setting-label">Hide Sidebar</div>
+                <div class="setting-description">Related videos while watching</div>
+            </div>
+            <div class="toggle" id="hideSidebar"></div>
+        </div>
+        
+        <div class="setting-item">
+            <div>
+                <div class="setting-label">Hide End Screens</div>
+                <div class="setting-description">Video end screen suggestions</div>
+            </div>
+            <div class="toggle" id="hideEndScreens"></div>
+        </div>
+        
+        <div class="setting-item">
+            <div>
+                <div class="setting-label">Hide Comments</div>
+                <div class="setting-description">Comment sections (optional)</div>
+            </div>
+            <div class="toggle" id="hideComments"></div>
+        </div>
+        
+        <button class="refresh-btn" id="refreshPage">Refresh Current Tab</button>
+        
+        <div class="status" id="status">
+            Extension is active and blocking distractions
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Productive YouTube - Styles to hide recommendations */
+
+/* Hide homepage recommendation grid and related elements */
+ytd-rich-grid-renderer,
+ytd-rich-section-renderer,
+ytd-rich-shelf-renderer,
+#contents.ytd-rich-grid-renderer,
+ytd-two-column-browse-results-renderer #primary,
+[page-subtype="home"] ytd-rich-grid-renderer,
+[page-subtype="home"] #contents,
+.ytd-browse[page-subtype="home"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Hide sidebar recommendations */
+ytd-watch-next-secondary-results-renderer,
+#secondary.ytd-watch-flexy,
+ytd-compact-video-renderer,
+ytd-shelf-renderer,
+#related {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Hide end screen recommendations */
+.ytp-endscreen-content,
+.ytp-ce-element,
+.ytp-cards-teaser,
+ytd-endscreen-element-renderer {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Hide additional recommendation elements */
+ytd-reel-shelf-renderer,
+ytd-video-secondary-info-renderer #meta-contents,
+ytd-merch-shelf-renderer,
+ytd-donation-shelf-renderer {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Hide YouTube Shorts recommendations */
+ytd-rich-shelf-renderer[is-shorts],
+ytd-reel-shelf-renderer,
+.ytd-rich-shelf-renderer[is-shorts] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Hide "Up next" and autoplay recommendations */
+.ytp-upnext,
+.ytp-pause-overlay,
+.ytp-scroll-min,
+.ytp-videowall-still {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Hide masthead (top bar) recommendations if any */
+#masthead-ad {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+}
+
+/* Clean up the layout when recommendations are hidden */
+ytd-two-column-browse-results-renderer {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* Center the search bar and make the page cleaner */
+ytd-app[is-watch-page] #columns #primary.ytd-watch-flexy {
+    max-width: 100% !important;
+    padding-right: 0 !important;
+}
+
+/* Hide promotional banners and ads related to recommendations */
+ytd-display-ad-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-ad-slot-renderer {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Override any inline styles that might show recommendations */
+[data-productive-youtube-hidden="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide mini-player recommendations */
+.ytp-miniplayer .ytp-upnext,
+.ytp-miniplayer .ytp-scroll-min {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Additional specificity for stubborn elements */
+body ytd-rich-grid-renderer,
+body ytd-rich-section-renderer,
+body ytd-rich-shelf-renderer {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Hide comments section if enabled in settings */
+.productive-youtube-hide-comments ytd-comments,
+.productive-youtube-hide-comments #comments,
+.productive-youtube-hide-comments ytd-comment-thread-renderer {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
